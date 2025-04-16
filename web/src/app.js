@@ -99,5 +99,13 @@ function deleteEmployee(id) {
 }
 
 function updateEmployee(emp) {
-    console.log('emp: ', emp)
+    const name = this.event.target.getAttribute('data-name')
+    console.log(name)
+    const emp = {
+        id: this.event.target('data-id'),
+        name: this.event.target('data-name'),
+        city: this.event.target('data-city'),
+        salary: this.event.target('data-salary')
+    }
+    console.log(emp)
 }
